@@ -23,7 +23,7 @@ Hit enter, and leave Terminal up. Leave your computer awake and set to the desir
 
 In the morning, at hh:mm, that particular song will play on Spotify.
 
-At any point after setting the alarm, press CTRL+C to quit the alarm. From there you can type in a new command with a new time/song, should you change your mind.
+At any point after setting the alarm, go back to the Terminal window press CTRL+C to quit the alarm. From there you can type in a new command with a new time/song, should you change your mind.
 
 Enjoy! In the future, I can implement the ability to play a Playlist or Album or Radio. For now, it's just a single Song as the param.
 
