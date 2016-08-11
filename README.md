@@ -6,7 +6,8 @@ schedule (0.3.2)
 Python (2.7.10)
 
 # Tutorial
-Open up Terminal
+Open up Terminal and cd to the directory you downloaded spotify.py to.
+
 The syntax is:
 ```
 python spotify.py "hh:mm" "spotify:trackuri"
