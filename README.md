@@ -2,8 +2,13 @@
 Simple terminal interface to set up a song to play as your alarm in the morning from Spotify
 
 # Dependencies
-schedule (0.3.2)
-Python (2.7.10)
+schedule (0.3.2) [if you don't have it, just do a pip install schedule. if you don't have pip, get it!]
+
+Python (2.7.10) [probably any 2.x variant will work, as long as you have schedule]
+
+Mac OS X (I used 10.11.4 but I bet most versions would work fine)
+
+Spotify [obviously]
 
 # Tutorial
 Open up Terminal and cd to the directory you downloaded spotify.py to.
