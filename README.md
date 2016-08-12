@@ -2,6 +2,8 @@
 Simple terminal interface to set up a song to play as your alarm in the morning from Spotify
 
 # Dependencies
+requests [pip install requests]
+
 schedule (0.3.2) [if you don't have it, just do a pip install schedule. if you don't have pip, get it!]
 
 Python (2.7.10) [probably any 2.x variant will work, as long as you have schedule]
@@ -15,14 +17,25 @@ Open up Terminal and cd to the directory you downloaded spotify.py to.
 
 The syntax is:
 ```
-python spotify.py "hh:mm" "spotify:trackuri"
+usage: spotify.py [-h] -t TIME [-s SONG [SONG ...]] [-a ARTIST [ARTIST ...]]
+
+Script to randomize Spotify song input on alarm time
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -t TIME, --time TIME  Alarm Clock Time : xx:xx
+  -s SONG [SONG ...], --song SONG [SONG ...]
+                        Play a specific song : SONG_NAME
+  -a ARTIST [ARTIST ...], --artist ARTIST [ARTIST ...]
+                        Play from specific artist : ARTIST_NAME
 ```
 For example:
 ```
-python spotify.py "07:00" "spotify:track:1RavaaVzP3aKOboZqJqygo"
+python spotify.py -t 07:00 -s never gonna give you up
 ```
 
-You can get the track uri from right clicking on a song in Spotify and selecting "Copy Spotify URI".
+# Updates
+No longer requires the ID, it will auto convert english to track id
 
 Hit enter, and leave Terminal up. Leave your computer awake and set to the desired volume for the alarm. Also, leave Spotify open.
 
@@ -33,4 +46,3 @@ At any point after setting the alarm, go back to the Terminal window press CTRL+
 Enjoy! In the future, I can implement the ability to play a Playlist or Album or Radio. For now, it's just a single Song as the param.
 
 I should note this is only for Mac OS X, as it requires AppleScript to control Spotify.
-
